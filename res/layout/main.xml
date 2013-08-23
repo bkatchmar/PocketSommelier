@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+	
+	<TextView  
+	    android:layout_width="fill_parent" 
+    	android:layout_height="wrap_content" 
+    	android:text="Pocket Sommelier (Alpha Build - 0.2)"
+    	android:textColor="#000000"
+    	android:gravity="center_vertical|center_horizontal"
+    	android:paddingBottom="5sp"
+    	android:paddingTop="5sp" />
+    	
+    <AutoCompleteTextView
+		android:id="@+id/actvName"
+		android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:completionThreshold="3" />
+    	
+    <TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="1">
+		
+		<TableRow>
+			<TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:text="Wine Type" 
+				android:gravity="center_vertical|center_horizontal"
+				android:textColor="#000000" />
+			<Spinner android:id="@+id/ddlWineType" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" />
+    	</TableRow>
+		
+	</TableLayout>
+	
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		
+		<TableRow>
+			<TextView 
+				android:layout_width="fill_parent" 
+				android:text="Min. Price" 
+				android:textColor="#000000" />
+			<EditText 
+				android:id="@+id/txtMinPrice" 
+				android:layout_width="70sp"
+				android:numeric="decimal" />
+			<TextView 
+				android:layout_width="fill_parent" 
+				android:text="Max. Price" 
+				android:textColor="#000000" />
+			<EditText 
+				android:id="@+id/txtMaxPrice" 
+				android:layout_width="70sp"
+				android:numeric="decimal" />
+		</TableRow>
+		
+	</TableLayout>
+	
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:stretchColumns="1">
+		
+		<TableRow>
+			<TextView 
+				android:layout_width="fill_parent" 
+				android:layout_height="fill_parent"
+				android:text="Region" 
+				android:gravity="center_vertical|center_horizontal"
+				android:textColor="#000000" />
+			<Spinner android:id="@+id/ddlWineRegion" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" />
+    	</TableRow>
+		
+	</TableLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+    	android:background="#FFFFFF"
+	    android:orientation="horizontal">
+	    
+	    <Button
+			android:id="@+id/btnSearch"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:text="Search" />
+	    
+    </LinearLayout>
+	
+</LinearLayout>
